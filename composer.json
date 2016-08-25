@@ -1,0 +1,29 @@
+{
+    "name": "crabbly/fpdf-laravel",
+
+    "description": "Laravel package for FPDF.",
+
+    "license": "MIT",
+
+    "keywords": ["laravel", "fpdf"],
+
+    "authors": [
+        {
+            "name": "Rodrigo Vieira",
+            "email": "rodrigo@crabbly.com"
+        }
+    ],
+
+    "require": {
+       "illuminate/support": "^5.2",
+       "illuminate/database": "^5.2"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Crabbly\\FPDF\\": "src/"
+        }
+    },
+
+    "minimum-stability": "dev"
+}
