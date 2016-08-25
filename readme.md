@@ -40,4 +40,3 @@ Please report any issue you find in the issues page.
 
 The package is free software distributed under the terms of the MIT license.
 FPDF is a free PHP class, you may use it for any kind of usage and modify it to suit your needs.
-[LICENSE](/license.txt)
