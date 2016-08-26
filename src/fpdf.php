@@ -10,7 +10,7 @@ namespace Crabbly\FPDF;
 * Author:  Olivier PLATHEY                                                     *
 *******************************************************************************/
 
-define('FPDF_VERSION','1.81');
+const FPDF_VERSION = '1.81';
 
 class FPDF
 {
