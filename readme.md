@@ -27,7 +27,16 @@ Crabbly\FPDF\FpdfServiceProvider::class
 This will bootstrap the package into Laravel.
 
 
-## Documentation
+## Usage
+
+You can resolve the FPDF class instance out of the container:
+
+```
+$pdf = $this->app('FPDF');
+
+```
+
+## FPDF Documentation
 
 For documentation manual and tutorials, please visit [www.fpdf.org](http://www.fpdf.org/)
 

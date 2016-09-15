@@ -1,6 +1,6 @@
 <?php
 
-namespace Crabbly\FPDF;
+namespace Crabbly;
 
 use Illuminate\Support\ServiceProvider;
 
@@ -23,6 +23,8 @@ class FpdfServiceProvider extends ServiceProvider
      */
     public function register()
     {
-
+        $this->app->bind('FPDF', function () {
+            return new FPDF;
+        });
     }
 }

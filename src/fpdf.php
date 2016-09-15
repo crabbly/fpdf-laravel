@@ -1,6 +1,6 @@
 <?php
 
-namespace Crabbly\FPDF;
+namespace Crabbly;
 
 /*******************************************************************************
 * FPDF                                                                         *
@@ -10,10 +10,10 @@ namespace Crabbly\FPDF;
 * Author:  Olivier PLATHEY                                                     *
 *******************************************************************************/
 
-const FPDF_VERSION = '1.81';
-
 class FPDF
 {
+	const FPDF_VERSION = '1.81';
+
 	protected $page;               // current page number
 	protected $n;                  // current object number
 	protected $offsets;            // array of object offsets
@@ -1824,7 +1824,7 @@ class FPDF
 
 	protected function _putinfo()
 	{
-		$this->metadata['Producer'] = 'FPDF '.FPDF_VERSION;
+		$this->metadata['Producer'] = 'FPDF '.self::FPDF_VERSION;
 		$this->metadata['CreationDate'] = 'D:'.@date('YmdHis');
 		foreach($this->metadata as $key=>$value)
 			$this->_put('/'.$key.' '.$this->_textstring($value));
