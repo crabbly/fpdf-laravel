@@ -1,6 +1,6 @@
 <?php
 
-namespace Crabbly;
+namespace Crabbly\FPDF;
 
 use Illuminate\Support\ServiceProvider;
 
