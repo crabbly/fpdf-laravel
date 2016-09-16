@@ -29,16 +29,39 @@ This will bootstrap the package into Laravel.
 
 ## Usage
 
-You can resolve the FPDF class instance out of the container:
+We can resolve the FPDF class instance out of the container:
 
 ```
-$pdf = $this->app('FPDF');
+$pdf = app('FPDF');
 
+```
+
+We can also instantiate it directly:
+
+```
+$pdf = new Crabbly\FPDF\FPDF;
 ```
 
 ## FPDF Documentation
 
 For documentation manual and tutorials, please visit [www.fpdf.org](http://www.fpdf.org/)
+
+## Example
+
+Create a 'Hello World' PDF document and save it to a file in the storage folder:
+
+```
+use Illuminate\Support\Facades\Storage;
+
+//create pdf document
+$pdf = app('FPDF');
+$pdf->AddPage();
+$pdf->SetFont('Arial','B',16);
+$pdf->Cell(40,10,'Hello World!');
+
+//save file
+Storage::put($pdf->Output('S'));
+```
 
 ## Contribution
 
