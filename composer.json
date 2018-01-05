@@ -29,9 +29,9 @@
     
     "extra": {
         "laravel": {
-            "providers": {
+            "providers": [
                 "Crabbly\\FPDF\\FpdfServiceProvider"
-            }
+            ]
         }
     }
 }
