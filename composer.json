@@ -21,7 +21,7 @@
 
     "autoload": {
         "psr-4": {
-            "Crabbly\\FPDF\\": "src/"
+            "Crabbly\\Fpdf\\": "src/"
         }
     },
 
@@ -30,7 +30,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "Crabbly\\FPDF\\FpdfServiceProvider"
+                "Crabbly\\Fpdf\\FpdfServiceProvider"
             ]
         }
     }
