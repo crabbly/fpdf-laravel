@@ -1,16 +1,16 @@
 <?php
 
-namespace Crabbly\FPDF;
+namespace Crabbly\Fpdf;
 
 /*******************************************************************************
- * FPDF                                                                         *
+ * Fpdf                                                                         *
  *                                                                              *
  * Version: 1.81                                                                *
  * Date:    2015-12-20                                                          *
  * Author:  Olivier PLATHEY                                                     *
  *******************************************************************************/
 
-class FPDF
+class Fpdf
 {
     const FPDF_VERSION = '1.81';
 

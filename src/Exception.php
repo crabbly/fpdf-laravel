@@ -1,5 +1,5 @@
 <?php
-namespace Crabbly\FPDF;
+namespace Crabbly\Fpdf;
 
 class Exception extends \RuntimeException
 {
