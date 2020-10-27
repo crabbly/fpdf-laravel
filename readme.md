@@ -12,7 +12,7 @@ FPDF Official Website:
 
 From the command line, run:
 
-```
+```php
 composer require crabbly/fpdf-laravel
 ```
 
@@ -20,25 +20,30 @@ composer require crabbly/fpdf-laravel
 
 For your Laravel app, open `config/app.php` and, within the `providers` array, append:
 
-```
-Crabbly\Fpdf\FpdfServiceProvider::class
+```php
+Crabbly\Fpdf\Providers\FpdfServiceProvider::class
 ```
 
 This will bootstrap the package into Laravel.
-
 
 ## Usage
 
 We can resolve the FPDF class instance out of the container:
 
-```
+```php
 $pdf = app('Fpdf');
+
+```
+
+Or with dependency injection
+
+```php
 
 ```
 
 We can also instantiate it directly:
 
-```
+```php
 $pdf = new Crabbly\Fpdf\Fpdf;
 ```
 
@@ -50,7 +55,7 @@ For documentation manual and tutorials, please visit [www.fpdf.org](http://www.f
 
 Create a 'Hello World' PDF document and save it to a file in the storage folder:
 
-```
+```php
 use Illuminate\Support\Facades\Storage;
 
 //create pdf document
